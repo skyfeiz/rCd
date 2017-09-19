@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/p2.css">
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery_scrollBar.js"></script>
+    <script src="libs/controller.js"></script>
+    <script src="libs/wbchart.js"></script>
+    <script src="libs/TweenMax.min.js"></script>
+    <script src="libs/CustomEase.js"></script>
+</head>
+
+<body>
+    <div class="root">
+        <div id="BG">
+            <img class="bgCover" src="imgs/p1/bgCover.jpg">
+            <img class="img1" src="imgs/p1/centerNut.png">
+            <img class="img2" src="imgs/p1/nut1.png">
+        </div>
+        <section class="toptitlebox">
+            <h2>延长保修</h2>
+        </section>
+        <section class="bottombox clearfix">
+            <a href="p1.html" class="fl">
+                <p>智能服务</p>
+            </a>
+            <a href="p2.html" class="fl active">
+                <p>延长保修</p>
+            </a>
+            <a href="p3.html" class="fl">
+                <p>模式创新</p>
+            </a>
+            <a href="p4.html" class="fl">
+                <p>研发辅助</p>
+            </a>
+        </section>
+
+        <div class="box1 chartBox1">
+            <img class="chartBorder" src="imgs/p2/fullBorder1.png">
+            <img class="arrow1" src="imgs/p2/arrow3.png">
+            <p class="chartTitle"></p>
+            <div class="listTitle clearfix">
+                <div class="topLine"></div><div class="bottomLine"></div>
+                <p>出厂编号</p><p>设备名称</p>
+            </div>
+            <div class="contentBox">
+                <ul>
+                    <li class="prominentBorder hide"><div class="prominentLine1"></div><div class="prominentLine2"></div></li>
+                </ul>
+            </div>
+        </div>
+        <section class="box1 chartBox2">
+            <img class="chartBorder" src="imgs/p2/fullBorder2.png">
+            <div class="arrow2"><img src="imgs/p2/arrow2.png"></div>
+            <p class="chartTitle"></p>
+            <ul class="contentBox">
+                <li class="listTitle clearfix">
+                    <div class="topLine"></div><div class="bottomLine"></div>
+                    <p>指标名称</p><p>指标值</p>
+                </li>
+                <div id="rollBox">
+                </div>
+                <li class="prominentBorder hide"><div class="prominentLine1"></div><div class="prominentLine2"></div></li>
+            </ul>
+            <div id="hideList"></div>
+        </section>
+        <section class="box1 chartBox3">
+            <img class="chartBorder" src="imgs/p2/fullBorder3.png">
+            <img class="arrow3" src="imgs/p2/arrow1.png">
+            <img class="arrow3_0" src="imgs/p2/arrow1_0.png">
+            <p class="chartTitle"></p>
+            <ul class="contentBox">
+                <li class="listTitle clearfix">
+                    <div class="topLine"></div><div class="bottomLine"></div>
+                    <p class="p1">选择险种</p><p class="p2">险种名称</p><p class="p3">保险金额</p>
+                </li>
+                <li class="prominentBorder hide"><div class="prominentLine1"></div><div class="prominentLine2"></div></li>
+            </ul>
+        </section>
+        <section class="box1 chartBox4 element-div">
+            <p class="chartTitle">保价计算结果</p>
+            <div class="box">
+                <div id="box1">
+                </div>
+                <img src="imgs/p2/dashCover2.png">
+                <div class="textBox">
+                    <p class="p1">D</p>
+                    <p class="p2">设备所处保险档次</p>
+                </div>
+            </div>
+            <div class="offerUp offer">
+                <img src="imgs/p2/$1.png">
+                <p class="offerNum1">标的折扣：</p>
+                <p class="offerNum2">0</p>
+            </div>
+            <div class="offerDown offer">
+                <img src="imgs/p2/$.png">
+                <p class="offerNum1">标的保费：</p>
+                <p class="offerNum2">0</p>
+            </div>
+            <p class="warntext">该设备不建议提供延保服务</p>
+        </section>
+
+        <div class="transformBG z_clone">
+            <div class="transformBox1">
+                <div class="leftBar1" mark-side="left" mark-Left=207 mark-top=9 mark-rotate=0></div>
+                <div class="leftBar2" mark-side="left" mark-Left=-3 mark-top=-1 mark-rotate=-45></div>
+                <div class="leftBar3" mark-side="top" mark-Left=0 mark-top=13 mark-rotate=0></div>
+                <div class="leftBar4" mark-side="top" mark-Left=0 mark-top=158 mark-rotate=0></div>
+                <div class="leftBar5" mark-side="left" mark-Left=150 mark-bottom=2 mark-rotate=0></div>
+                <img class="leftStick1" mark-side="left" mark-Left=78 mark-top=7 mark-rotate=0 src="imgs/p2/transformSticks/stick1.png">
+                <img class="leftStick2" mark-side="left" mark-Left=62 mark-top=0 mark-rotate=0 src="imgs/p2/transformSticks/stick2.png">
+                <img class="leftStick3" mark-side="left" mark-Left=0 mark-top=0 mark-rotate=0 src="imgs/p2/transformSticks/stick3.png">
+                <img class="leftStick4" mark-side="top" mark-Left=0 mark-top=99 mark-rotate=0 src="imgs/p2/transformSticks/stick4.png">
+                <img class="leftStick5" mark-side="bottom" mark-Left=0 mark-bottom=1 mark-rotate=0 src="imgs/p2/transformSticks/stick5.png">
+                <img class="leftStick6" mark-side="bottom" mark-Left=2 mark-bottom=36 mark-rotate=0 src="imgs/p2/transformSticks/stick6.png">
+                <img class="leftStick7" mark-side="left" mark-Left=2 mark-bottom=4 mark-rotate=0 src="imgs/p2/transformSticks/stick7.png">
+                <img class="leftStick8" mark-side="left" mark-Left=-2 mark-bottom=0 mark-rotate=0 src="imgs/p2/transformSticks/stick8.png">
+            </div>
+            <div class="transformBox2">
+                <div class="rightBar2" mark-side="right"  mark-right=-3 mark-top=-1 mark-rotate=45></div>
+                <div class="rightBar3" mark-side="top"  mark-right=0 mark-top=13 mark-rotate=0></div>
+                <div class="rightBar4" mark-side="top"  mark-right=0 mark-top=158 mark-rotate=0></div>
+                <img class="rightStick1" mark-side="right"  mark-right=78 mark-top=7 mark-rotate=0 src="imgs/p2/transformSticks/stick10.png">
+                <img class="rightStick2" mark-side="right"  mark-right=62 mark-top=0 mark-rotate=0 src="imgs/p2/transformSticks/stick20.png">
+                <img class="rightStick3" mark-side="right"  mark-right=0 mark-top=0 mark-rotate=0 src="imgs/p2/transformSticks/stick30.png">
+                <img class="rightStick4" mark-side="top"  mark-right=0 mark-top=99 mark-rotate=0 src="imgs/p2/transformSticks/stick40.png">
+                <img class="rightStick5" mark-side="bottom"  mark-right=0 mark-bottom=1 mark-rotate=0 src="imgs/p2/transformSticks/stick50.png">
+                <img class="rightStick6" mark-side="bottom"  mark-right=2 mark-bottom=36 mark-rotate=0 src="imgs/p2/transformSticks/stick60.png">
+                <img class="rightStick7" mark-side="right"  mark-right=2 mark-bottom=4 mark-rotate=0 src="imgs/p2/transformSticks/stick70.png">
+                <img class="rightStick8" mark-side="right"  mark-right=-2 mark-bottom=0 mark-rotate=0 src="imgs/p2/transformSticks/stick80.png">
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/p2.js"></script>
+</body>
+
+</html>

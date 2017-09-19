@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/p3.css">
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/jquery_scrollBar.js"></script>
+    <script src="libs/controller.js"></script>
+    <script src="libs/wbchart.js"></script>
+    <script src="libs/TweenMax.min.js"></script>
+    <script src="libs/CustomEase.js"></script>
+    <script src="libs/create.min.js"></script>
+</head>
+
+<body>
+    <div class="root">
+        <section class="toptitlebox">
+            <h2 id="p3h2">模式创新</h2>
+        </section>
+        <section class="middle front" id="middle">
+            <div class="videoTipBox" id="videoTipBox"></div>
+            <div class="videobox">
+                <video class="video" id="video" autoplay="autoplay" loop="loop" src="imgs/lasterCut.mp4"></video>
+            </div>
+        </section>
+        <section class="element-div front cxms_chart1">
+            <p class="charttitle"></p>
+            <div class="cxms_chart_box" id="cxms_chart1_box"></div>
+        </section>
+        
+        <section class="element-div front cxms_chart2">
+            <p class="charttitle"></p>
+            <div class="cxms_chart_box" id="cxms_chart2_box"></div>
+        </section>
+        
+        <section class="element-div front cxms_chart3">
+            <p class="charttitle"></p>
+            <div class="cxms_chart_box" id="cxms_chart3_box"></div>
+        </section>
+        <section class="back cxmsBack_chart1">
+            <p class="charttitle"></p>
+            <div class="leftbox">
+                <div class="iconimg"><img src="imgs/p3/backicon1.png" alt=""></div>
+                <div class="icontext">
+                    <p class="i_name">产品研发周期</p>
+                    <p class="i_value fall">30<span>%</span></p><span class="iconlight"></span></div>
+                <div class="l_details">
+                    <p class="s_data clearfix">
+                        <span class="s_value numAnimate fl" data-end="100">6.0</span>
+                        <span class="s_unit fl">天</span>
+                    </p>
+                    <span class="c_icon fall"></span>
+                    <br />
+                    <p class="s_data clearfix">
+                        <span class="s_value fl" data-end="80">4.2</span>
+                        <span class="s_unit fl">天</span>
+                    </p>
+                </div>
+                    <span class="pointbg ab_lt"></span><span class="pointbg ab_rt"></span>
+                    <span class="pointbg ab_rb"></span><span class="pointbg ab_lb"></span>
+            </div>
+            <div class="cxmsBack_chart1_box" id="cxmsBack_chart1_box"></div>
+        </section>
+    
+        <section class="back cxmsBack_chart2">
+            <p class="charttitle"></p>
+            <div class="leftbox">
+                <div class="iconimg"><img src="imgs/p3/backicon2.png" alt=""></div>
+                <div class="icontext">
+                    <p class="i_name">能源利用率</p>
+                    <p class="i_value add">5<span>%</span></p><span class="iconlight"></span></div>
+                <div class="l_details">
+                    <p class="s_data clearfix">
+                        <span class="s_value numAnimate fl" data-end="100">75</span>
+                        <span class="s_unit fl">%</span>
+                    </p>
+                    <br />
+                    <span class="c_icon add"></span>
+                    <p class="s_data clearfix">
+                        <span class="s_value fl" data-end="80">70</span>
+                        <span class="s_unit fl">%</span>
+                    </p>
+                </div>
+                    <span class="pointbg ab_lt"></span><span class="pointbg ab_rt"></span>
+                    <span class="pointbg ab_rb"></span><span class="pointbg ab_lb"></span>
+            </div>
+            <div class="cxmsBack_chart2_box" id="cxmsBack_chart2_box"></div>
+        </section>
+
+        <section class="back right-ele cxmsBack_chart3">
+            <p class="charttitle"></p>
+            <div class="leftbox">
+                <div class="iconimg"><img src="imgs/p3/box2icon.png" alt=""></div>
+                <div class="icontext">
+                    <p class="i_name">生产效率</p>
+                    <p class="i_value add">25<span>%</span></p><span class="iconlight"></span></div>
+                <div class="l_details">
+                    <p class="s_data clearfix">
+                        <span class="s_value numAnimate fl" data-end="100">100</span>
+                        <span class="s_unit fl">万针/台天</span>
+                    </p>
+                    <br />
+                    <span class="c_icon add"></span>
+                    <p class="s_data clearfix">
+                        <span class="s_value fl" data-end="80">80</span>
+                        <span class="s_unit fl">万针/台天</span>
+                    </p>
+                </div>
+                    <span class="pointbg ab_lt"></span><span class="pointbg ab_rt"></span>
+                    <span class="pointbg ab_rb"></span><span class="pointbg ab_lb"></span>
+            </div>
+            <div class="cxmsBack_chart3_box" id="cxmsBack_chart3_box"></div>
+        </section>
+
+        <section class="back right-ele cxmsBack_chart4">
+            <p class="charttitle"></p>
+            <div class="leftbox">
+                <div class="iconimg"><img src="imgs/p3/box3icon.png" alt=""></div>
+                <div class="icontext">
+                    <p class="i_name">设备运营成本</p>
+                    <p class="i_value fall">20<span>%</span></p><span class="iconlight"></span></div>
+                <div class="l_details">
+                    <p class="s_data clearfix">
+                        <span class="s_value numAnimate fl" data-end="100">150</span>
+                        <span class="s_unit fl">万针/台天</span>
+                    </p>
+                    <br />
+                    <span class="c_icon add"></span>
+                    <p class="s_data clearfix">
+                        <span class="s_value fl" data-end="80">120</span>
+                        <span class="s_unit fl">万针/台天</span>
+                    </p>
+                </div>
+                    <span class="pointbg ab_lt"></span><span class="pointbg ab_rt"></span>
+                    <span class="pointbg ab_rb"></span><span class="pointbg ab_lb"></span>
+            </div>
+            <div class="cxmsBack_chart4_box" id="cxmsBack_chart4_box"></div>
+        </section>
+
+        <section class="back right-ele cxmsBack_chart5">
+            <p class="charttitle"></p>
+            <div class="leftbox">
+                <div class="iconimg"><img src="imgs/p3/box4icon.png" alt=""></div>
+                <div class="icontext">
+                    <p class="i_name">产品不良率</p>
+                    <p class="i_value fall">20<span>%</span></p><span class="iconlight"></span></div>
+                <div class="l_details">
+                    <p class="s_data clearfix">
+                        <span class="s_value numAnimate fl" data-end="100">34</span>
+                        <span class="s_unit fl">件/万件</span>
+                    </p>
+                    <br />
+                    <span class="c_icon add"></span>
+                    <p class="s_data clearfix">
+                        <span class="s_value fl" data-end="80">24</span>
+                        <span class="s_unit fl">件/万件</span>
+                    </p>
+                </div>
+                    <span class="pointbg ab_lt"></span><span class="pointbg ab_rt"></span>
+                    <span class="pointbg ab_rb"></span><span class="pointbg ab_lb"></span>
+            </div>
+            <div class="cxmsBack_chart5_box" id="cxmsBack_chart5_box"></div>
+        </section>
+
+        <section class="transformBG z_clone">
+            <div class="transformBox1">
+                <div class="leftBar1" mark-side="left" mark-Left=207 mark-top=9 mark-rotate=0></div>
+                <div class="leftBar2" mark-side="left" mark-Left=-3 mark-top=-1 mark-rotate=-45></div>
+                <div class="leftBar3" mark-side="top" mark-Left=0 mark-top=13 mark-rotate=0></div>
+                <div class="leftBar4" mark-side="top" mark-Left=0 mark-top=158 mark-rotate=0></div>
+                <div class="leftBar5" mark-side="left" mark-Left=154 mark-bottom=2 mark-rotate=0></div>
+                <img class="leftStick1" mark-side="left" mark-Left=78 mark-top=7 mark-rotate=0 src="imgs/transformSticks/stick1.png">
+                <img class="leftStick2" mark-side="left" mark-Left=62 mark-top=0 mark-rotate=0 src="imgs/transformSticks/stick2.png">
+                <img class="leftStick3" mark-side="left" mark-Left=0 mark-top=0 mark-rotate=0 src="imgs/transformSticks/stick3.png">
+                <img class="leftStick4" mark-side="top" mark-Left=0 mark-top=99 mark-rotate=0 src="imgs/transformSticks/stick4.png">
+                <img class="leftStick5" mark-side="bottom" mark-Left=0 mark-bottom=1 mark-rotate=0 src="imgs/transformSticks/stick5.png">
+                <img class="leftStick6" mark-side="bottom" mark-Left=2 mark-bottom=36 mark-rotate=0 src="imgs/transformSticks/stick6.png">
+                <img class="leftStick7" mark-side="left" mark-Left=2 mark-bottom=4 mark-rotate=0 src="imgs/transformSticks/stick7.png">
+                <img class="leftStick8" mark-side="left" mark-Left=-2 mark-bottom=0 mark-rotate=0 src="imgs/transformSticks/stick8.png">
+            </div>
+            <div class="transformBox2">
+                <div class="rightBar2" mark-side="right" mark-right=-3 mark-top=-1 mark-rotate=45></div>
+                <div class="rightBar3" mark-side="top" mark-right=0 mark-top=13 mark-rotate=0></div>
+                <div class="rightBar4" mark-side="top" mark-right=0 mark-top=158 mark-rotate=0></div>
+                <img class="rightStick1" mark-side="right" mark-right=78 mark-top=7 mark-rotate=0 src="imgs/transformSticks/stick10.png">
+                <img class="rightStick2" mark-side="right" mark-right=62 mark-top=0 mark-rotate=0 src="imgs/transformSticks/stick20.png">
+                <img class="rightStick3" mark-side="right" mark-right=0 mark-top=0 mark-rotate=0 src="imgs/transformSticks/stick30.png">
+                <img class="rightStick4" mark-side="top" mark-right=0 mark-top=99 mark-rotate=0 src="imgs/transformSticks/stick40.png">
+                <img class="rightStick5" mark-side="bottom" mark-right=0 mark-bottom=1 mark-rotate=0 src="imgs/transformSticks/stick50.png">
+                <img class="rightStick6" mark-side="bottom" mark-right=2 mark-bottom=36 mark-rotate=0 src="imgs/transformSticks/stick60.png">
+                <img class="rightStick7" mark-side="right" mark-right=2 mark-bottom=4 mark-rotate=0 src="imgs/transformSticks/stick70.png">
+                <img class="rightStick8" mark-side="right" mark-right=-2 mark-bottom=0 mark-rotate=0 src="imgs/transformSticks/stick80.png">
+            </div>
+        </section>
+    </div>
+    <script src="js/p3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+{
+	"success": true,
+	"title": "选择保险产品",
+	"data": [{
+		"name": "设备整机盗抢保险",
+		"value": 280000,
+		"chosen": 1
+	}, {
+		"name": " 设备损失保险",
+		"value": 280000,
+		"chosen": 1
+	}, {
+		"name": "第三者责任险",
+		"value": 300000,
+		"chosen": 1
+	}, {
+		"name": "发动机涉水损失险",
+		"value": 100000,
+		"chosen": 1
+	}, {
+		"name": "操作人员责任险",
+		"value": 30000,
+		"chosen": 1
+	}, {
+		"name": "设备自然损失险",
+		"value": 280000,
+		"chosen": 1
+	}, {
+		"name": "玻璃单独破碎险",
+		"value": 10000,
+		"chosen": 1
+	}, {
+		"name": "设备整机盗抢保险不计免赔险",
+		"value": "",
+		"chosen": 1
+	}, {
+		"name": "设备损失保险不计免赔险",
+		"value": "",
+		"chosen": 1
+	}, {
+		"name": "第三者责任险不计免赔险",
+		"value": "",
+		"chosen": 1
+	}, {
+		"name": "发动机涉水损失险不计免赔险",
+		"value": "",
+		"chosen": 1
+	}, {
+		"name": "操作人员责任险不计免赔险",
+		"value": "",
+		"chosen": 1
+	}, {
+		"name": "设备自然损失险不计免赔险",
+		"value": "",
+		"chosen": 1
+	}]
+}
